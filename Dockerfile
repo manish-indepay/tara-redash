@@ -27,7 +27,7 @@ RUN if [ "x$skip_frontend_build" = "x" ] ; then yarn build; else mkdir -p /front
 
 FROM python:3.7-slim-buster
 
-EXPOSE 5000
+EXPOSE 9004
 
 # Controls whether to install extra dependencies needed for all data sources.
 ARG skip_ds_deps
